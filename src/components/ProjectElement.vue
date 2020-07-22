@@ -1,14 +1,14 @@
 <template>
-
+<div id="project">
 <v-container 
   align-content-center 
   >
     <v-row>
       <v-col >
         <v-card 
-        height="550"
+        height="480"
         outlined
-        dark
+        color=#E0F2F1 
         >
             <v-row >
               <v-col
@@ -25,9 +25,9 @@
               </v-col>
               <v-col
                 class="d-flex child-flex"
-                cols="6"
+                cols="5.5"
               >
-                <v-card flat tile class="d-flex">
+                <v-card color=#E0F2F1 flat tile class="d-flex">
                 <br>
                   <v-card-title>{{title}}</v-card-title>
                   <v-card-subtitle> {{des}} </v-card-subtitle> 
@@ -42,6 +42,7 @@
       </v-col>
     </v-row>
  </v-container>
+ </div>
 </template>
 
 <script>
@@ -63,13 +64,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-
-.v-card {
-  margin: .5em;
-
+.v-card__title {
+  color: #092B47;
 }
+.v-card__subtitle {
+  color: #092B47; 
+}
+
 a {
-  color: white;
+    color: #092B47;
 }
 
 </style>

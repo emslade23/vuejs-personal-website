@@ -11,12 +11,19 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/projects',
+    path: '/iotProjects',
     name: 'projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/Projects.vue')
+  },
+  {
+    path: '/softwareProjects',
+    name: 'softwareProjects',
+    component: () => import('../views/SoftwareProjects.vue')
+  },
+  {
+    path: '/cooking',
+    name: 'cooking',
+    component: () => import('../views/Cooking.vue')
   }
 ]
 
