@@ -3,22 +3,20 @@
 
   <v-row>
 
-        <v-col cols="12" sm="6" offset-sm="5">
-            <v-card outlined>
-              <v-container center fluid>
+        <v-col cols="15">
+            <v-card flat>
+              <v-container fluid>
                 <v-row>
                   <v-col
-                    v-for="n in 9"
+                    v-for="n in 6"
                     :key="n"
                     class="d-flex child-flex"
                     cols="4"
                   >
-                    <v-card flat class="d-flex">
+                    <v-card flat class="d-flex ma-0 pa-0">
                       <v-img
-                        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-                        aspect-ratio="2"
-                        class="grey lighten-2"
+                        :src="`assets/gallery${n}.jpeg`"
+                        aspect-ratio="1.3"
                       >
                       </v-img>
                     </v-card>
@@ -65,6 +63,7 @@
               </v-col>
             </v-row>
  </v-card>
+ <Timeline></Timeline>
 
 
 
@@ -73,10 +72,11 @@
 </template>
 
 <script>
+import Timeline from '@/components/Timeline.vue'
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  components: {
+    Timeline
   }
 }
 </script>

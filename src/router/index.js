@@ -24,6 +24,11 @@ Vue.use(VueRouter)
     path: '/cooking',
     name: 'cooking',
     component: () => import('../views/Cooking.vue')
+  },
+  {
+    path: '/photography',
+    name: 'photography',
+    component: () => import('../views/Photography.vue')
   }
 ]
 
