@@ -8,59 +8,70 @@
      <v-container rid-list-md>
       <v-layout row>
         <v-flex xs6>
-            <ProjectElement title="Weather API Design" des="The primary function of the alarm clock is to work as a timer. So when a user inputs a specific time,
-                then our clock will take in that time and start a timer. When this timer starts, the seconds will be recorded by one of the servos. Then, the minutes will be 
-                recorded by the last two digits on the Alphanumeric display and by the second servo. The hours will be recorded by the first two digits of the alphanumeric display." 
-                image="retroalarm.jpeg" link="https://github.com/emslade23/EC444-Projects/blob/master/quest-1/report.md" linkName="Project Repo"
-                video="https://www.youtube.com/watch?v=3sD5_wn7ulk&feature=youtu.be" videoName="Video Demo"
-            ></ProjectElement>
+             <ProjectElement title="COVID Tracker App" aspectRatio=".5" des="I developed a React Native Application that pulls COVID data from an API and overlays it on a map to a user. The overlay depends on the longitude and laditude of the specific country, so I created a data structure to keep track of the
+             countries locations and their respective COVID health data. I then referenced this data structure to create the map overlay.
+             The app also provides a summary of the total infected, total deaths, and total recovered." 
+                image="covidapp.gif" link="https://github.com/emslade23/codvid-app-emslade23" linkName="COVID Project Repo"
+              ></ProjectElement>
         </v-flex>
         <v-flex xs6>
-             <ProjectElement title="Continuous Integration Project" des="In this project, our task was to measure sensor data and display it
-                on an application in real time. We worked with infrared and ultrasonic sensors to measure range and we worked with 
-                thermistors to measure temperature. We then used a socket to send the new data values to the web application, and the web 
-                application was updated with the values in real time." 
-                image="sensorcentral.png" link="https://github.com/emslade23/EC444-Projects/blob/master/quest-2/report.md" linkName="Project Repo"
-                video="https://www.youtube.com/watch?v=vtBfmNzGsuc&feature=youtu.be" videoName="Video Demo"
+             <ProjectElement title="ML Translate" aspectRatio="1" des="In this project, my team and I built an app that helps you translate objects into another language. This app could be useful when you are traveling. The app accesses your webcam, and allows you to select a language to translate to. Then, you can show the webcam any object, 
+             and our image recognition algorithm with recognize the image and convert it to a text string. I developed the live API that will take that text string and translate it into the user selected language. The translated text will then get displayed back to
+             the user in real time!" 
+                image="mltranslate2.gif" link="https://github.com/emslade23/TranslateAR" linkName="Project Repo"
+                video="https://pure-eyrie-22820.herokuapp.com/" videoName="Live Video Demo Online" video2="https://translate-ar.herokuapp.com/translate?translateTo=russian&textToTranslate=hi+friend" videoName2="Live Translate API"
               ></ProjectElement>
         </v-flex>
       </v-layout>
 
       <v-layout row>
         <v-flex xs6>
-            <ProjectElement title="Twitter Summarizer API" des="For this project, we were given sensors to measure heart rate and steps, and
-                we had to record a user's data, and then send it to a web application where we displayed the data in real time. The web application with the biometric data can
-                be viewed from anywhere in the world! The main purpose behind this project is to allow family members to monitor health data of their family member
-                who is running a marathon." 
-                image="wearablecomputer.jpeg" link="https://github.com/emslade23/EC444-Projects/blob/master/quest-3/report.md" linkName="Project Repo"
-                video="https://www.youtube.com/watch?v=s8XyCHvXPtk&feature=youtu.be" videoName="Video Demo"
+            <ProjectElement title="Twitter Summarizer App" aspectRatio="1" des="For this project, I developed an application that allows a user to input a twitter handle, and the number of tweets they would like to see and then, a video summarizing the tweets is returned to the user. The app is currently online, 
+            and multiple users are able to request tweets at a time because of the threading feature I implemented.  
+            I designed this project using object oriented programming and decided it would be best to store
+            the tweets in a userTweets object that I could reference when creating the tweet summary video." 
+                image="musk.gif" link="https://github.com/emslade23/twitter-summarizer-rest-service-emslade23/blob/master/README.md" linkName="Project Repo"
+                video="https://twitter-video-app.herokuapp.com/tweetVideo?handle=@lifemathmoney&tweetNumber=30" videoName="Example Twitter Summary Video for @lifemathmoney"
             ></ProjectElement>
         </v-flex>
         <v-flex xs6>
-             <ProjectElement title="COVID Tracker App" des="In this task, we converted a remote control car, into a self driving car that can drive effectively
-                between two segments in a track. Our requirements for the self driving car include: it must prevent collisions using adaptive cruise control, maintain driving center of the track,
-                maintain a speed of 0.1m/s-0.4m/s, and sending wireless commands start and stop to the car. We had several more project features such as an
-                alpha-numeric display and tfmini LIDAR sensors to control turning!" 
-                image="crawler.jpeg" link="https://github.com/emslade23/EC444-Projects/blob/master/quest-4/report.md" linkName="Project Repo"
-                video="https://www.youtube.com/watch?v=6dlBu9K2hMU&feature=youtu.be" videoName="Video Demo"
-              ></ProjectElement>
+            <ProjectElement title="Weather App with Saved Locations" aspectRatio="1.6" des="For this project, my teammate and I wanted to develop a web application that allows a user to login, search for a location's weather, and save visited locations for future use. 
+            I implemented the single sign on feature for the project, while my teammate designed and managed the database. I also developed the call to the Weather API, developed the data visualization to display the weather data for a respective location, and I also deployed the application."
+                image="weatherSeniorDesign.gif" link="https://github.com/emslade23/2019-mini-s25" linkName="Project Repo" 
+                video="http://emslade.pythonanywhere.com/" videoName="Live Weather Website!"
+                
+            ></ProjectElement>
         </v-flex>
       </v-layout>
 
 
       <v-layout row>
         <v-flex xs6>
-            <ProjectElement title="Twitter Summarizer Video" des="For this project, we created a key fob using the esp32 board, a transmitter, and a receiver. This key is met to interact with a hub by sending 
-            a unique ID and code which the hub then relays to a servers along with its own ID. Through a local network, the server on the RPi and a web client receive both IDs, the location and time of the interaction as well as the person. The hub then sends an unlocked signal to the fob triggering a green LED on the board. "
-                image="securekey2.jpeg" link="https://github.com/emslade23/EC444-Projects/blob/master/quest-5/report.md" linkName="Project Repo" 
-                video="https://www.youtube.com/watch?v=rQ8CEyopQT4&feature=youtu.be" videoName="Video Demo"
+            <ProjectElement title="Weather API for Airports" aspectRatio="1.3" des="The goal of this project was to develop my own REST API architecture and help a user receive weather information at a specific airport. When a user inputs an airport, my
+            API will return the maximum possible temperature, minimum possible temperature, and humidity for that given location. What happens behind the scenes: the user inputs a location and I check it to make sure it is valid. Then, I 
+            look through a CSV to determine the latitude and longitude coordinates of the airport, then using this data, I call a weather API and return the weather data back to the user." 
+                image="weatherapi.png" link="https://github.com/emslade23/api-design-emslade23" linkName="Project Repo"
             ></ProjectElement>
         </v-flex>
         <v-flex xs6>
-             <ProjectElement title="MLTranslate with Image Recognition" des="The goal for this project is to to program a crawler to automatically navigate itself though a course and react
-                        to stop and go signals emitted from beacons on the track as smoothly as possible. The crawler must also include a manually controlled feature though a web client and use a webcam to decipher a QR code." 
-                          image="crawlerp1.jpeg" link="https://github.com/emslade23/EC444-Projects/blob/master/quest-6/report.md" linkName="Project Repo" 
-                          video="https://www.youtube.com/watch?v=9xKs3fbmaRE&feature=youtu.be" videoName="Video Demo!"
+             <ProjectElement title="Health Monitor App" aspectRatio="1.6" des="This project simulates a Health Monitor setup for an ICU. A user can see a patient's current blood pressure, blood oxygen levels, and pulse. 
+                An alert is sent if any reading returns a value outside of the given healthy interval. The readings are fed into an ML algorithm that returns predictions about future readings for the patient.
+                My team divided the project into independent modules to make the development process more efficient. I developed a program that uses linear regression to predict the next blood pressure, blood oxygen, and pulse." 
+                          image="healthmonitor.png" link="https://github.com/emslade23/health-monitor-team7" linkName="Project Repo"
+            ></ProjectElement>
+        </v-flex>
+      </v-layout>
+
+            <v-layout row>
+        <v-flex xs6>
+            <ProjectElement title="Cloud Computing ChRIS Benchmarking Project" aspectRatio="1" des="For this project, my team and I created a ChRIS plugin that could measure GPU performance on x86 and Power9 architectures. I focused on deploying the process manager, pman and the process file input and output handler, pfioh images onto an x86 Openshift cluster to use. "
+                image="chris.png" link="https://github.com/emslade23/Medical-Compute-using-ChRIS-on-the-MOC-PowerPC-and-x86_64-GPU-usage-and-benchmarking" linkName="Project Repo" 
+                video="https://www.youtube.com/watch?v=1e_rx_YLQEw" videoName="Final Project Video Demo"
+            ></ProjectElement>
+        </v-flex>
+        <v-flex xs6>
+             <ProjectElement title="Time2Care" aspectRatio="1" des="This application is meant for people wanting to go to an emergency room in the fastest way possible. The app takes in wait times for emergency rooms and displays it for users to help them make the most informed decision about which emergency room to go to. I developed the patient portal pages. We developed this app at an Accenture hackathon and won first place." 
+                          image="emergency.jpeg" link="https://github.com/emslade23/Time2Care" linkName="Project Repo" 
             ></ProjectElement>
         </v-flex>
       </v-layout>

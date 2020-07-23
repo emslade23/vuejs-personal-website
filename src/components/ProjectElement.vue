@@ -6,7 +6,7 @@
     <v-row>
       <v-col >
         <v-card 
-        height="480"
+        max-height="600"
         outlined
         color=#E0F2F1 
         >
@@ -14,14 +14,25 @@
               <v-col
                
               >
+              <div v-if= "aspectRatio != .8">
                 <v-card flat class="d-flex">
                   <v-img
                     :src="'/assets/'+ image"
-                    aspect-ratio="1"
+                    :aspect-ratio= " aspectRatio "
                    
                   >
                   </v-img>
                 </v-card>
+              </div>
+              <div v-else>
+                <v-card flat class="d-flex">
+                  <v-img
+                    :src="'/assets/'+ image"
+                    aspect-ratio=".8"
+                  >
+                  </v-img>
+                </v-card>
+              </div>
               </v-col>
               <v-col
                 class="d-flex child-flex"
@@ -34,6 +45,8 @@
                   <a :href="link"> {{linkName}} </a>
                   <br>
                   <a :href="video"> {{videoName}} </a>
+                  <br>
+                  <a :href="video2"> {{videoName2}} </a>
                 </v-card>
               </v-col>
               
@@ -56,7 +69,12 @@ export default {
     link: String,
     linkName: String,
     video: String,
-    videoName: String
+    videoName: String,
+    video2: String,
+    videoName2: String,
+    aspectRatio: {
+      default: ".8"
+    },
   }
 }
 </script>
