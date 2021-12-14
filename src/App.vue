@@ -19,8 +19,7 @@
       <router-link to="/">Home</router-link> | 
       <router-link to="/iotProjects">IoT Projects </router-link> | 
       <router-link to="/softwareProjects"> Software Projects</router-link> |
-      <router-link to="/cooking"> Cooking</router-link> |
-      <router-link to="/photography"> Photography</router-link> 
+      <router-link to="/cooking"> Cooking</router-link> 
     </div>
     <router-view></router-view>
   </div>

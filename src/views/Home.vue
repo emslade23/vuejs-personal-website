@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Elizabeth Slade"/>
-    
+    <HelloWorld msg="Elizabeth Slade"/> 
   </div>
 </template>
 
