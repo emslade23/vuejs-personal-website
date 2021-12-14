@@ -46,7 +46,7 @@
                    md="7" offset-md="1">
                     <br>
                     <v-card-title> Welcome to my website!</v-card-title>
-                    <v-card-text> Please feel free to check out my engineering projects. There are IoT projects and software projects. Each of these projects were completed in college. Also, there is in-progress cooking page. </v-card-text>
+                    <v-card-text> Please feel free to check out my engineering projects. There are IoT projects and software projects. Each of these projects were completed in college. Also, there is an in-progress cooking page. </v-card-text>
                 </v-col>
               </v-row>
         </v-card>
